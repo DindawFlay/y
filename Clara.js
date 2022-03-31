@@ -75,10 +75,10 @@ publik = true
 
 //━━━━━━━━━━━━━━━[ INFO OWNER ]━━━━━━━━━━━━━━━\\
 
-namabot = 'NathanBot'
-namaowner = 'Nathan'
-nomorowner = '6287834993722'
-githubowner = 'https://github.com/ZeroChanBot/Base-NathanBot'
+namabot = 'AlamBotz'
+namaowner = 'Alam🌱'
+nomorowner = '6285888083107'
+githubowner = 'https://github.com/rizkyrahma/claraaV1'
 youtubeowner = 'https://youtube.com/c/ZEROBOT7'
 
 //━━━━━━━━━━━━━━━[ STICKER WM ]━━━━━━━━━━━━━━━\\
