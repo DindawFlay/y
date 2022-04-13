@@ -714,8 +714,7 @@ case 'script':
 if (isBanned) return reply(mess.banned)
 reply2(`[ GITHUB ONWER FOLLOW YA ]
 • Creator Bot : Nbilla
-• GitHub Creator : ${githubowner}
-
+• GitHub Cr
 break
 
 //━━━━━━━━━━━━━━━[ ANIME FITUR ]━━━━━━━━━━━━━━━\\
@@ -757,7 +756,7 @@ case 'sc':
 teks =
 `[ INFO SCRIPT ]
 • Creator Bot : Nbilla
-• GitHub Creator : ${githubowner}
+• GitHub Creator
 
 [ LINK SCRIPT ]
 • Coming Soon
