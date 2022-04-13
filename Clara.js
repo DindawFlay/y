@@ -75,11 +75,11 @@ publik = true
 
 //━━━━━━━━━━━━━━━[ INFO OWNER ]━━━━━━━━━━━━━━━\\
 
-namabot = 'AlamBotz'
-namaowner = 'Alam🌱'
-nomorowner = '6285888083107'
-githubowner = 'https://github.com/rizkyrahma/claraaV1'
-youtubeowner = 'https://youtube.com/c/ZEROBOT7'
+namabot = 'NbillaBOTZ'
+namaowner = 'Nbilla'
+nomorowner = '6289515233398'
+githubowner = 'https://github.com/NbilaLoli'
+youtubeowner = 'https://youtube.com/c/Nbilla'
 
 //━━━━━━━━━━━━━━━[ STICKER WM ]━━━━━━━━━━━━━━━\\
 
@@ -169,20 +169,20 @@ nathan.on("CB:action,,battery", json => {
 //━━━━━━━━━━━━━━━[ MESSAGE ]━━━━━━━━━━━━━━━\\
 			
 			mess = {
-				wait: 'Mohon Tunggu Sebentar...',
-				banned: 'Maaf Anda Telah Di Banned, Hubungi Owner Untuk Melepaskan Banned',
-				success: `Sukses Kak\nJangan Lupa Subscribe ${youtubeowner}`,
+				wait: '*⚠ Mohon Tunggu Sebentar...*',
+				banned: '*⚠ Maaf Anda Telah Di Banned, Hubungi Owner Untuk Melepaskan Banned*',
+				success: `*✅ Sukses Kak\nJangan Lupa Subscribe* ${youtubeowner}`,
 				error: {
-					stick: 'Terjadi Kesalahan Saat Ingin Mengkonversi Menjadi Sticker',
-					Iv: 'Link Yang Anda Berikan Tidak Valid'
+					stick: '*❌ Terjadi Kesalahan Saat Ingin Mengkonversi Menjadi Sticker*',
+					Iv: '*❌ Link Yang Anda Berikan Tidak Valid*'
 				},
 				only: {
-					group: 'Perintah Hanya Berlaku Di Group!!',
-					premium: 'Fitur Hanya Berlaku Untuk User Premium!!',
-					ownerG: 'Perintah Hanya Untuk Pemilik Group!!',
-					ownerB: 'Perintah Hanya Untuk Pemilik Bot!!',
-					admin: 'Perintah Hanya Berlaku Untuk Admin!!',
-					Badmin: 'Jadikan Bot Sebagai Admin Untuk Menggunakan Perintah Ini!!'
+					group: '*❌ Perintah Hanya Berlaku Di Group!!*',
+					premium: '*❌ Fitur Hanya Berlaku Untuk User Premium!!*',
+					ownerG: '*❌ Perintah Hanya Untuk Pemilik Group!!*',
+					ownerB: '*❌ Perintah Hanya Untuk Pemilik Bot!!*',
+					admin: '*❌ Perintah Hanya Berlaku Untuk Admin!!*',
+					Badmin: '*⚠ Jadikan Bot Sebagai Admin Untuk Menggunakan Perintah Ini!!*'
 				}
 			}
 			
@@ -341,7 +341,7 @@ const ftroly = {key : {fromMe:false,
                             itemCount : 100,
                             status: 1,
                             surface : 1,
-                            message: `NathanBot by Nathan`, 
+                            message: `NbillaBot by Nbilla`, 
                             orderTitle: `${namaowner}`,
                             thumbnail: thumb, 
                             sellerJid: '0@s.whatsapp.net',
@@ -603,8 +603,8 @@ const froxx = {
                 },
 	 message: { 
 		"extendedTextMessage": {
-                 "text": `Base by Nathan`,
-                 "title": `NathanBot by Nathan`,
+                 "text": `Base by Nbilla`,
+                 "title": `NbillaBOTZ by Nbilla`,
                  'jpegThumbnail': fs.readFileSync("./media/gambar/menu.jpg"),
                         }
 	                  } 
@@ -612,7 +612,7 @@ const froxx = {
 //━━━━━━━━━━━━━━━[ BUAT BIO BOT ]━━━━━━━━━━━━━━━\\
 
 run = process.uptime() 
-           nathan.setStatus(`${namabot} Aktif Selama ${kyun(run)} | YouTube : ZEROBOT`).catch((_)=>_);
+           nathan.setStatus(`${namabot} Aktif Selama ${kyun(run)} | YouTube : NbillaBOTZ`).catch((_)=>_);
           settingstatus = new Date() * 1;
           
 //━━━━━━━━━━━━━━━[ JAM ]━━━━━━━━━━━━━━━\\
@@ -644,269 +644,78 @@ stst = await nathan.getStatus(`${sender.split('@')[0]}@c.us`)
 anu =`
 Hai Kak @${sender.split('@')[0]}👋
 
-*ꗃ _Info - Bot_*
-╾ _Nama Owner : ${namaowner}_
-╾ _Owner : @${nomorowner}_
-╾ _Battery : ${baterai.battery}_
-╾ _Mode : ${publik? "Public - Mode":"Self - Mode"}_
-╾ _Group Chat : ${group.length} Chat_
-╾ _Private Chat : ${private.length} Chat_
-╾ _Total Hit : ${cmhit.length} Command_
-╾ _Speed : ${latensiu.toFixed(4)} Seconds_
-╾ _Browser : ${nathan.browserDescription[1]}_
-╾ _Server : ${nathan.browserDescription[0]}_
-╾ _Version : ${nathan.browserDescription[2]}_
-╾ _Handphone : ${nathan.user.phone.device_manufacturer}_
-
-*ꗃ _Info - User_*
-╾ _Owner : ${isOwner? "Ya":"Tidak"}_
-╾ _Nama : ${pushname}_
-╾ _Bio : ${stst}_
-╾ _Nomor : ${sender}_
-╾ _Premium : ${isPremium? "Premium":"Tidak"}_
-
-*ꗃ _Info - Waktu_*
-╾ _WIB : ${timeWib}_
-╾ _WIT : ${timeWit}_
-╾ _WITA : ${timeWita}_
-
-╭─ ⌜ Fun Menu ⌟
-┃
-┃› ${prefix}namaninja
-┃› ${prefix}pantun
-┃› ${prefix}katasindiran
-┃› ${prefix}katailham
-┃› ${prefix}tongue
-┃› ${prefix}ssweb
-┃› ${prefix}nickepep
-┃
-└──────────────
-
-╭─ ⌜ Sticker Menu ⌟ 
-┃
-┃› ${prefix}amongus
-┃› ${prefix}patrick
-┃› ${prefix}toimg
-┃› ${prefix}sticker
-┃
-└──────────────
-
-╭─ ⌜ Group Menu ⌟ 
-┃
-┃› ${prefix}report
-┃› ${prefix}request
-┃› ${prefix}listonline
-┃› ${prefix}setnamegc
-┃› ${prefix}setdesc
-┃› ${prefix}setppgc
-┃› ${prefix}promote
-┃› ${prefix}demote
-┃› ${prefix}welcome
-┃› ${prefix}antilink
-┃› ${prefix}group
-┃› ${prefix}wame
-┃› ${prefix}notif
-┃
-└──────────────
-
-╭─ ⌜ Downloader Menu ⌟ 
-┃
-┃› ${prefix}tiktok [ link tiktok ]
-┃› ${prefix}play [ judul lagu ]
-┃› ${prefix}lirik [ judul lagu ]
-┃› ${prefix}mediafire [ link mediafire ]
-┃› ${prefix}herolist
-┃› ${prefix}herodetail [ nama hero ]
-┃
-└──────────────
-
-╭─ ⌜ Owner Menu ⌟ 
-┃
-┃› ${prefix}addcmd
-┃› ${prefix}addprem
-┃› ${prefix}delprem
-┃› ${prefix}public
-┃› ${prefix}self
-┃› ${prefix}premiumlist
-┃› ${prefix}ban
-┃› ${prefix}unban
-┃› ${prefix}delcmd
-┃› ${prefix}listcmd
-┃› ${prefix}exif
-┃› ${prefix}bc
-┃› ${prefix}leaveall
-┃› ${prefix}bc2
-┃
-└──────────────
-
-╭─ ⌜ Islam Menu ⌟ 
-┃
-┃› ${prefix}listsurah
-┃› ${prefix}asmaulhusna
-┃› ${prefix}alquran 
-┃› ${prefix}alquranaudio 
-┃› ${prefix}kisahnabi 
-┃› ${prefix}jadwalsholat 
-┃
-└──────────────
-
-╭─ ⌜ Anime Menu ⌟ 
-┃
-┃› ${prefix}ppcouple
-┃› ${prefix}cosplay
-┃› ${prefix}milf
-┃› ${prefix}loli
-┃› ${prefix}husbu
-┃› ${prefix}wallml
-┃› ${prefix}waifu
-┃
-└──────────────
-
-╭─ ⌜ Image Menu ⌟ 
-┃
-┃› ${prefix}fox
-┃› ${prefix}dog
-┃› ${prefix}cat
-┃› ${prefix}panda
-┃› ${prefix}panda2
-┃› ${prefix}bird
-┃› ${prefix}koala
-┃
-└──────────────
-
-╭─ ⌜ Random Menu ⌟ 
-┃
-┃› ${prefix}art
-┃› ${prefix}bts
-┃› ${prefix}exo
-┃› ${prefix}elf
-┃› ${prefix}loli
-┃› ${prefix}neko
-┃› ${prefix}waifu
-┃› ${prefix}shota
-┃› ${prefix}husbu
-┃› ${prefix}sagiri
-┃› ${prefix}shinobu
-┃› ${prefix}megumin
-┃› ${prefix}wallnime
-┃› ${prefix}chiisaihentai
-┃› ${prefix}trap
-┃› ${prefix}blowjob
-┃› ${prefix}yaoi
-┃› ${prefix}ecchi
-┃› ${prefix}hentai
-┃› ${prefix}ahegao
-┃› ${prefix}hololewd
-┃› ${prefix}sideoppai
-┃› ${prefix}animefeets
-┃› ${prefix}animebooty
-┃› ${prefix}animethighss
-┃› ${prefix}hentaiparadise
-┃› ${prefix}animearmpits
-┃› ${prefix}hentaifemdom
-┃› ${prefix}lewdanimegirls
-┃› ${prefix}biganimetiddies
-┃› ${prefix}animebellybutton
-┃› ${prefix}hentai4everyone
-┃› ${prefix}bj
-┃› ${prefix}ero
-┃› ${prefix}cum
-┃› ${prefix}feet
-┃› ${prefix}yuri
-┃› ${prefix}trap
-┃› ${prefix}lewd
-┃› ${prefix}feed
-┃› ${prefix}eron
-┃› ${prefix}solo
-┃› ${prefix}gasm
-┃› ${prefix}poke
-┃› ${prefix}anal
-┃› ${prefix}holo
-┃› ${prefix}tits
-┃› ${prefix}kuni
-┃› ${prefix}kiss
-┃› ${prefix}erok
-┃› ${prefix}smug
-┃› ${prefix}baka
-┃› ${prefix}solog
-┃› ${prefix}feetg
-┃› ${prefix}lewdk
-┃› ${prefix}waifu
-┃› ${prefix}pussy
-┃› ${prefix}femdom
-┃› ${prefix}cuddle
-┃› ${prefix}hentai
-┃› ${prefix}eroyuri
-┃› ${prefix}cum_jpg
-┃› ${prefix}blowjob
-┃› ${prefix}erofeet
-┃› ${prefix}holoero
-┃› ${prefix}classic
-┃› ${prefix}erokemo
-┃› ${prefix}fox_girl
-┃› ${prefix}futanari
-┃› ${prefix}lewdkemo
-┃› ${prefix}wallpaper
-┃› ${prefix}pussy_jpg
-┃› ${prefix}kemonomimi
-┃› ${prefix}nsfw_avatar
-┃
-└──────────────
-
-╭─ ⌜ Kode Menu ⌟ 
-┃
-┃› ${prefix}tts
-┃› ${prefix}kodenegara
-┃› ${prefix}kodebahasa
-┃
-└──────────────
-
-╭─ ⌜ TextPro Menu ⌟ 
-┃
-┃› ${prefix}blackpink [ teks ]
-┃› ${prefix}water_pipe [ teks ]
-┃› ${prefix}halloween [ teks ]
-┃› ${prefix}halloween2  [ teks1 | teks2 ]
-┃› ${prefix}horror [ teks1 | teks2 ]
-┃› ${prefix}sircuit [ teks ]
-┃› ${prefix}discovery [ teks ]
-┃› ${prefix}fiction [ teks ]
-┃› ${prefix}game8bit [ teks1 | teks2 ]
-┃› ${prefix}demon [ teks ]
-┃› ${prefix}transformer [ teks ]
-┃› ${prefix}berry [ teks ]
-┃› ${prefix}layered [ teks1 | teks2 ]
-┃› ${prefix}thunder [ teks ]
-┃› ${prefix}magma [ teks ]
-┃› ${prefix}3dstone [ teks ]
-┃› ${prefix}neon [ teks ]
-┃› ${prefix}glitch [ teks ]
-┃› ${prefix}glitch2 [ teks1 | teks2 ]
-┃› ${prefix}broken [ teks ]
-┃› ${prefix}gradient [ teks ]
-┃› ${prefix}glossy [ teks ]
-┃› ${prefix}watercolor [ teks ]
-┃› ${prefix}multicolor [ teks ]
-┃› ${prefix}neon_devil [ teks ]
-┃› ${prefix}underwater [ teks ]
-┃› ${prefix}bear [ teks ]
-┃
-└──────────────`
+╒═══ 《 *${namaowner}* 》 ═══
+├────────────────────
+├≽ *Creator  : ${namaowner}*
+├≽ *Owner : @${nomorowner}*
+├≽ *Mode : ${publik? "Public - Mode":"Self - Mode"}*
+├≽ *Version : ${nathan.browserDescription[2]}*
+├────────────────────
+╞═══ 《 *USER INFO* 》 ═══
+├────────────────────
+├≽ *Owner : ${isOwner? "Ya":"Tidak"}*
+├≽ *Nama : ${pushname}*
+├≽ *Bio : ${stst}*
+├≽ *Nomor : ${sender}*
+├≽ *Premium : ${isPremium? "Premium":"Tidak"}*
+├────────────────────
+╞═══ 《 *MENU* 》 ═══
+├────────────────────
+├≽ *${prefix}pantun*
+├≽ *${prefix}katasindiran*
+├≽ *${prefix}ssweb*
+├≽ *${prefix}nickepep*
+├≽ *${prefix}amongus*
+├≽ *${prefix}patrick*
+├≽ *${prefix}toimg*
+├≽ *${prefix}sticker*
+├≽ *${prefix}report*
+├≽ *${prefix}request*
+├≽ *${prefix}listonline*
+├≽ *${prefix}setnamegc*
+├≽ *${prefix}setdesc*
+├≽ *${prefix}setppgc*
+├≽ *${prefix}promote*
+├≽ *${prefix}demote*
+├≽ *${prefix}welcome*
+├≽ *${prefix}antilink*
+├≽ *${prefix}group*
+├≽ *${prefix}wame*
+├≽ *${prefix}notif*
+├────────────────────
+╞═══ 《 *DOWNLOADER MENU* 》 ═══
+├────────────────────
+├≽ *${prefix}tiktok* [ link tiktok ]
+├≽ *${prefix}play* [ judul lagu ]
+├≽ *${prefix}lirik* [ judul lagu ]
+├≽ *${prefix}mediafire* [ link mediafire ]
+├≽ *${prefix}herolist*
+├≽ *${prefix}herodetail* [ nama hero ]
+├────────────────────
+╞═══ 《 *OWNER BOT MENU* 》 ═══
+├────────────────────
+├≽ *${prefix}addcmd*
+├≽ *${prefix}addprem*
+├≽ *${prefix}delprem*
+├≽ *${prefix}public*
+├≽ *${prefix}self*
+├≽ *${prefix}premiumlist*
+├≽ *${prefix}bc*
+├≽ *${prefix}leaveall*
+├≽ *${prefix}bc2*
+├────────────────────`
 sendButImage(from, anu,`All Right Reserved\n${Tanggal}`, thumb, [
             {buttonId: `${prefix}owner`, buttonText: {displayText: `OWNER`, }, type: 1, },
-            {buttonId: `${prefix}sc`, buttonText: { displayText: `SCRIPT`, }, type: 1, },
+            {buttonId: `${prefix}sc`, buttonText: { displayText: `GITHUB OWNER`, }, type: 1, },
             ]); 
 break
 case 'sc':
 case 'script':
 if (isBanned) return reply(mess.banned)
-reply2(`[ INFO SCRIPT ]
-• Creator Bot : Nathan
-• Youtube Creator : ${youtubeowner}
+reply2(`[ GITHUB ONWER FOLLOW YA ]
+• Creator Bot : Nbilla
 • GitHub Creator : ${githubowner}
 
-[ LINK SCRIPT ]
-• ${githubowner}/Base-NathanBot`)
 break
 
 //━━━━━━━━━━━━━━━[ ANIME FITUR ]━━━━━━━━━━━━━━━\\
@@ -940,54 +749,6 @@ break
               break
               
 //━━━━━━━━━━━━━━━[ TEXTPRO ]━━━━━━━━━━━━━━━\\
-case 'blackpink':
-case 'water_pipe':
-case 'halloween':
-case 'sketch':
-case 'sircuit':
-case 'discovery':
-case 'fiction':
-case 'demon':
-case 'transformer':
-case 'berry':
-case 'thunder':
-case 'magma':
-case '3dstone':
-case 'neon':
-case 'glitch':
-case 'harry_potter':
-case 'embossed':
-case 'broken':
-case 'papercut':
-case 'gradient':
-case 'glossy':
-case 'watercolor':
-case 'multicolor':
-case 'neon_devil':
-case 'underwater':
-case 'bear':
-if (isBanned) return reply(mess.banned)
-if (args.length < 1) return reply(`Masukan Teksnya?\nContoh: ${prefix + command} Nathan`)
-reply(mess.wait)
-query = args.join (" ")
-bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/${command}?text=${query}&apikey=${AlphaBot}`)
-nathan.sendMessage(from, bf, image, { quoted: froxx })
-break
-case 'halloween2':
-case 'horror':
-case 'game8bit':
-case 'layered':
-case 'glitch2':
-if (isBanned) return reply(mess.banned)
-if (args.length < 1) return reply(`Nama yang mau di tulis?\nContoh: ${prefix + command} Nathan|DevId`)
-reply(mess.wait)
-query = args.join (" ")
-txt1 = query.split('|')[0]
-txt2 = query.split('|')[1]
-if(!txt2)return reply('Text 2 nya?')
-bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/${command}?text=${txt1}&text2=${txt2}&apikey=${AlphaBot}`)
-nathan.sendMessage(from, bf, image, { quoted: froxx })
-break
 
 //━━━━━━━━━━━━━━━[ ANIMATION ANIMALS ]━━━━━━━━━━━━━━━\\
 
@@ -995,19 +756,16 @@ case 'script':
 case 'sc':
 teks =
 `[ INFO SCRIPT ]
-• Creator Bot : Nathan
-• Youtube Creator : ${youtubeowner}
+• Creator Bot : Nbilla
 • GitHub Creator : ${githubowner}
 
 [ LINK SCRIPT ]
 • Coming Soon
 
-[ LINK YOUTUBE ]
-• https://youtube.com/ZEROBOT7`
 but = [
           { buttonId: `${prefix}menu`, buttonText: { displayText: 'MENU' }, type: 1 }
 ]
-        sendButLocation(from, teks, `©Created by Nathan`, fakeimg, but, { thumbnail: Buffer.alloc(0) })
+        sendButLocation(from, teks, `©Created by Nbilla`, fakeimg, but, { thumbnail: Buffer.alloc(0) })
 break
 
 //━━━━━━━━━━━━━━━[ ANIMATION ANIMALS ]━━━━━━━━━━━━━━━\\
@@ -1638,7 +1396,7 @@ case 'bc':
              for (let _ of anu) {
              nathan.sendMessage(_.jid, 
 			{"contentText": `*「 BROADCAST 」*\n\n${body.slice(4)}`,
-			"footerText": 'NathanBot by Nathan',
+			"footerText": 'NbilaBOTZ by Nblla',
 			"buttons": [
 			{"buttonId": `${prefix}owner`,
 			"buttonText": {"displayText": "OWNER"
