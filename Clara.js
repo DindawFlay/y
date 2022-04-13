@@ -642,9 +642,9 @@ if (isBanned) return reply(mess.banned)
 stst = await nathan.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 anu =`
-Hai Kak @${sender.split('@')[0]}👋
+Hello,Kak @${sender.split('@')[0]}👋
 
-╒═══ 《 *${namaowner}* 》 ═══
+╒═══ 《 *NBILLANBLBOTZ* 》 ═══
 ├────────────────────
 ├≽ *Creator  : ${namaowner}*
 ├≽ *Owner : @${nomorowner}*
@@ -682,6 +682,8 @@ Hai Kak @${sender.split('@')[0]}👋
 ├≽ *${prefix}group*
 ├≽ *${prefix}wame*
 ├≽ *${prefix}notif*
+├≽ *${prefix}opengc*
+├≽ *${prefix}closegc*
 ├────────────────────
 ╞═══ 《 *DOWNLOADER MENU* 》 ═══
 ├────────────────────
@@ -702,16 +704,25 @@ Hai Kak @${sender.split('@')[0]}👋
 ├≽ *${prefix}premiumlist*
 ├≽ *${prefix}bc*
 ├≽ *${prefix}leaveall*
+├≽ *${prefix}opengc*
+├≽ *${prefix}leaveall*
 ├≽ *${prefix}bc2*
 ├────────────────────`
 sendButImage(from, anu,`All Right Reserved\n${Tanggal}`, thumb, [
             {buttonId: `${prefix}owner`, buttonText: {displayText: `OWNER`, }, type: 1, },
-            {buttonId: `${prefix}sc`, buttonText: { displayText: `GITHUB OWNER`, }, type: 1, },
+            {buttonId: `${prefix}sc`, buttonText: { displayText: `SCRIPT`, }, type: 1, },
             ]); 
 break
 case 'sc':
 case 'script':
 if (isBanned) return reply(mess.banned)
+reply2(`[ INFO SCRIPT ]
+• Creator Bot : NbillaBOTZ
+• Youtube Creator : ${youtubeowner}
+• GitHub Creator : ${githubowner}
+
+[ LINK SCRIPT ]
+• ${githubowner}/lolimG`)
 break
 
 //━━━━━━━━━━━━━━━[ ANIME FITUR ]━━━━━━━━━━━━━━━\\
@@ -752,17 +763,21 @@ case 'script':
 case 'sc':
 teks =
 `[ INFO SCRIPT ]
-• Creator Bot : Nbilla
-• GitHub Creator
+• Creator Bot : Nathan
+• Youtube Creator : ${youtubeowner}
+• GitHub Creator : ${githubowner}
 
 [ LINK SCRIPT ]
 • Coming Soon
 
+[ LINK YOUTUBE ]
+• https://youtube.com/nbla`
 but = [
           { buttonId: `${prefix}menu`, buttonText: { displayText: 'MENU' }, type: 1 }
 ]
-        sendButLocation(from, teks, `©Created by Nbilla`, fakeimg, but, { thumbnail: Buffer.alloc(0) })
+        sendButLocation(from, teks, `©Created by NbillaSR`, fakeimg, but, { thumbnail: Buffer.alloc(0) })
 break
+
 
 //━━━━━━━━━━━━━━━[ ANIMATION ANIMALS ]━━━━━━━━━━━━━━━\\
 
@@ -1706,7 +1721,7 @@ if (isBanned) return reply(mess.banned)
 case 'group':
 if (isBanned) return reply(mess.banned)
 if (!isGroup) return reply(mess.only.group)
-    nthn = '©Created by Nathan'
+    nthn = '©Created by NbillaSR'
         sendButMessage(from, nthn, `Pilih Salah Satu`, [
           {
             buttonId: `${prefix}opengc`,
